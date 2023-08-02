@@ -1,0 +1,5 @@
+name: HyliaSpigotCore
+version: '${project.version}'
+main: net.swofty.lobby.Loader
+authors: [ HyliaMC ]
+description: Lobby
