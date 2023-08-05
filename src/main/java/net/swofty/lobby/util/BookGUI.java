@@ -75,8 +75,8 @@ public class BookGUI {
         BookMeta meta = (BookMeta) book.getItemMeta();
 
         List<IChatBaseComponent> pages = (List<IChatBaseComponent>) CraftMetaBook.class.getDeclaredField("pages").get(meta);
-        TextComponent text = new TextComponent(Util.colorize("&3&l  HYTALE TRAILER\n\nHypixel has been\nworking on its own\nStandalone game for\nthe past few years.\n\nWatch the trailer on\nthe Hytale website!\n\n"));
-        TextComponent log_out = new TextComponent(new ComponentBuilder("  §d§lWATCH TRAILER").event(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://youtu.be/o77MzDQT1cg")).event(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§8(Brace yourself)").create())).create());
+        TextComponent text = new TextComponent(Util.colorize("&3&l  HYLIA STUDIOS\n\nHylia es una\nempresa de juegos\ndonde estan haciendo\neste servidor.\n\nPuedes visitar\nla web de Hylia!\n\n"));
+        TextComponent log_out = new TextComponent(new ComponentBuilder("  §d§lCLICK PARA IR").event(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://hyliamc.net")).event(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("§8(Redireccion al foro)").create())).create());
         IChatBaseComponent page = IChatBaseComponent.ChatSerializer.a(ComponentSerializer.toString(text, log_out));
         pages.add(page);
         meta.setTitle("Hytale");
@@ -92,7 +92,7 @@ public class BookGUI {
         BookMeta meta = (BookMeta) book.getItemMeta();
 
         List<IChatBaseComponent> pages = (List<IChatBaseComponent>) CraftMetaBook.class.getDeclaredField("pages").get(meta);
-        TextComponent text = new TextComponent(Util.colorize("\nKeep up with Hypixel\nnews + get free &6&l4X\n&6&lCoin Boosters &rby\nfollowing us!\n\nClick to follow:\n- &9&lFacebook\n- &d&lInstagram\n- &c&lYouTube\n- &3&lTwitter\n\nYou can claim these\nrewards at any time in\nthe Delivery Man"));
+        TextComponent text = new TextComponent(Util.colorize("\nMantente con noticias\nde Hylia y obten &6&l4X\n&6&lBoosters de Moneda &rpor\nseguirnos!\n\nClick para seguirnos:\n- &9&lFacebook\n- &d&lInstagram\n- &c&lYouTube\n- &3&lTwitter\n\nPuedes reclamar estas\nrecompensas cuando quieras!\nthe Delivery Man"));
         IChatBaseComponent page = IChatBaseComponent.ChatSerializer.a(ComponentSerializer.toString(text));
         pages.add(page);
         meta.setTitle("Social Rewards");
@@ -128,9 +128,9 @@ public class BookGUI {
         BookMeta meta = (BookMeta) book.getItemMeta();
 
         List<IChatBaseComponent> pages = (List<IChatBaseComponent>) CraftMetaBook.class.getDeclaredField("pages").get(meta);
-        TextComponent text = new TextComponent(Util.colorize("Join our discord to hangout with others and have a fun time. Also to view brand new leaks and announcements!\n\n"));
-        TextComponent join = new TextComponent(new ComponentBuilder("§9§lCLICK TO JOIN!").event(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.gg/atlasmc")).create());
-        join.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Click to join this link:\n§bdiscord.gg/atlasmc").create()));
+        TextComponent text = new TextComponent(Util.colorize("Unete a nuestro discord y haz amigos. Tambien entrate de nuestras noticias y novedades!\n\n"));
+        TextComponent join = new TextComponent(new ComponentBuilder("§9§lCLICK TO JOIN!").event(new ClickEvent(ClickEvent.Action.OPEN_URL, "https://discord.hyliamc.net")).create());
+        join.setHoverEvent(new HoverEvent(HoverEvent.Action.SHOW_TEXT, new ComponentBuilder("Click para unirte:\n§bdiscord.hyliamc.net").create()));
         IChatBaseComponent page = IChatBaseComponent.ChatSerializer.a(ComponentSerializer.toString(text, join));
         pages.add(page);
         meta.setTitle("Rules");

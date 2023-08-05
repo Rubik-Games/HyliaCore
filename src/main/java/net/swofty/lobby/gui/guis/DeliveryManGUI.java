@@ -13,7 +13,7 @@ public class DeliveryManGUI extends GUI {
 
     @Override
     public String getTitle() {
-        return "The Delivery Man";
+        return "Recompensas";
     }
 
     @Override

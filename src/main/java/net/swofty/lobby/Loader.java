@@ -134,7 +134,7 @@ public final class Loader extends JavaPlugin {
 
     private void nodeAdd(NodeAddEvent event) {
         if (event.isUser() && event.getNode().getType() == NodeType.INHERITANCE) {
-            Bukkit.getPlayer(event.getTarget().getFriendlyName()).sendMessage(Util.colorize("&cAs your rank was changed you have lost your plus color"));
+            Bukkit.getPlayer(event.getTarget().getFriendlyName()).sendMessage(Util.colorize("&cComo tu rango ha cambiado has perdido el color de tu plus!"));
             new BukkitRunnable() {
                 @Override
                 public void run() {
@@ -148,7 +148,7 @@ public final class Loader extends JavaPlugin {
 
     private void nodeRemove(NodeRemoveEvent event) {
         if (event.isUser() && event.getNode().getType() == NodeType.INHERITANCE) {
-            Bukkit.getPlayer(event.getTarget().getFriendlyName()).sendMessage(Util.colorize("&cAs your rank was changed you have lost your plus color"));
+            Bukkit.getPlayer(event.getTarget().getFriendlyName()).sendMessage(Util.colorize("&cComo tu rango ha cambiado has perdido el color de tu plus!"));
 
             new BukkitRunnable() {
                 @Override
@@ -163,14 +163,14 @@ public final class Loader extends JavaPlugin {
 
     private void onUserPromote(UserPromoteEvent event) {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "lp user " + event.getUser().getUsername() + " meta clear");
-        Bukkit.getPlayer(event.getUser().getUsername()).sendMessage(Util.colorize("&cAs your rank was changed you have lost your plus color"));
+        Bukkit.getPlayer(event.getUser().getUsername()).sendMessage(Util.colorize("&cComo tu rango ha cambiado has perdido el color de tu plus!"));
 
         Data.reloadRank(Bukkit.getPlayer(event.getUser().getUsername()));
     }
 
     private void onUserDemote(UserDemoteEvent event) {
         Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "lp user " + event.getUser().getUsername() + " meta clear");
-        Bukkit.getPlayer(event.getUser().getUsername()).sendMessage(Util.colorize("&cAs your rank was changed you have lost your plus color"));
+        Bukkit.getPlayer(event.getUser().getUsername()).sendMessage(Util.colorize("&cComo tu rango ha cambiado has perdido el color de tu plus!"));
 
         Data.reloadRank(Bukkit.getPlayer(event.getUser().getUsername()));
     }

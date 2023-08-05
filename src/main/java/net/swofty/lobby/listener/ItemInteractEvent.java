@@ -85,26 +85,26 @@ public class ItemInteractEvent implements Listener {
             if (!Data.getData(player, "parkour").equals("none")) {
                 Data.editData(player, "hidden-players", "false");
                 Items.giveParkourItems(player, false);
-                player.sendMessage("§aPlayer visibility enabled!");
+                player.sendMessage("§aVisibilidad de jugadores activada!");
                 return;
             }
 
             Data.editData(player, "hidden-players", "false");
             Items.giveSpawnItems(player, false);
-            player.sendMessage("§aPlayer visibility enabled!");
+            player.sendMessage("§aVisibilidad de jugadores activada!");
 
         } else if (item.getItemMeta().getDisplayName().contains("Visible")) {
 
             if (!Data.getData(player, "parkour").equals("none")) {
                 Data.editData(player, "hidden-players", "false");
                 Items.giveParkourItems(player, true);
-                player.sendMessage("§aPlayer visibility disabled!");
+                player.sendMessage("§aVisibilidad de jugadores desactivada!");
                 return;
             }
 
             Data.editData(player, "hidden-players", "true");
             Items.giveSpawnItems(player, true);
-            player.sendMessage("§cPlayer visibility disabled!");
+            player.sendMessage("§cVisibilidad de jugadores desactivada!");
 
         } else if (item.getItemMeta().getDisplayName().contains("Reset")) {
 

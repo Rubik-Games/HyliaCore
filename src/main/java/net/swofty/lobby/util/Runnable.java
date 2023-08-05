@@ -29,12 +29,6 @@ public class Runnable {
                 Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "weather clear");
                 Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "time set day");
 
-                Bukkit.broadcastMessage(" ");
-                Bukkit.broadcastMessage("§4[WATCHDOG ANNOUNCEMENT]");
-                Bukkit.broadcastMessage("Watchdog has banned §c§l0 §rplayers in the last 7 days.");
-                Bukkit.broadcastMessage("Staff have banned an additional §c§l0 §rin the last 7 days.");
-                Bukkit.broadcastMessage("§cBlacklisted modifications are a bannable offense!");
-                Bukkit.broadcastMessage(" ");
             }
         }.runTaskTimer(Loader.getInstance(), 1200, 3600);
 
@@ -51,16 +45,16 @@ public class Runnable {
                         objective.getScore(Util.colorize(" ")).setScore(9);
 
                         if (new PlayerManager(player).getRank().equals("default")) {
-                            objective.getScore(Util.colorize("Rank: &7Default")).setScore(8);
+                            objective.getScore(Util.colorize("Rango: &7Normal")).setScore(8);
                         } else {
-                            objective.getScore(Util.colorize("Rank: " + new PlayerManager(player).getRankPrefix().replace("[", "").replace("]", ""))).setScore(8);
+                            objective.getScore(Util.colorize("Rango: " + new PlayerManager(player).getRankPrefix().replace("[", "").replace("]", ""))).setScore(8);
                         }
-                        objective.getScore(Util.colorize("Mystery Dust: &a" + Data.getData(player, "mystery-dust"))).setScore(7);
-                        objective.getScore(Util.colorize("Achievements: &a" + Data.getData(player, "achievements"))).setScore(6);
-                        objective.getScore(Util.colorize("Level: &a" + Data.getData(player, "level"))).setScore(5);
+                        objective.getScore(Util.colorize("Polvos: &a" + Data.getData(player, "mystery-dust"))).setScore(7);
+                        objective.getScore(Util.colorize("Logros: &a" + Data.getData(player, "achievements"))).setScore(6);
+                        objective.getScore(Util.colorize("Nivel: &a" + Data.getData(player, "level"))).setScore(5);
                         objective.getScore(Util.colorize("   ")).setScore(4);
                         objective.getScore(Util.colorize("Lobby: &a#1")).setScore(3);
-                        objective.getScore(Util.colorize("Players: &a" + Bukkit.getOnlinePlayers().size())).setScore(2);
+                        objective.getScore(Util.colorize("Jugadores: &a" + Bukkit.getOnlinePlayers().size())).setScore(2);
                         objective.getScore(Util.colorize("  ")).setScore(1);
                         objective.getScore(Util.colorize("&ewww.hyliamc.net")).setScore(1);
 

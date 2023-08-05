@@ -7,7 +7,7 @@ import org.bukkit.entity.Player;
 
 import net.swofty.lobby.command.AbstractCommand;
 
-@CommandParameters(usage = "/<command> <args>", permission = "rank.admin", description = "Changes your fly mode", inGameOnly = true)
+@CommandParameters(usage = "/<command> <args>", permission = "rank.vip", description = "Changes your fly mode", inGameOnly = true)
 public class Command_fly extends AbstractCommand {
 
     @Override
@@ -18,8 +18,8 @@ public class Command_fly extends AbstractCommand {
         sender.getPlayer().setFlying(!isFlying);
 
         if(isFlying)
-            send("Flying disabled.");
+            send("&cModo de vuelo desactivado.");
         else
-            send("Flying enabled.");
+            send("&aModo de vuelo activado.");
     }
 }

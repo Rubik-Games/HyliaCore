@@ -73,29 +73,25 @@ public class PlayerJoin implements Listener {
         Items.giveSpawnItems(player, hidden);
 
         player.setLevel(1);
-        player.teleport(new Location(Bukkit.getWorld("world"), 45.5, 86, 22.5));
+        player.teleport(new Location(Bukkit.getWorld("world"), 21.5, 72, 11.5));
 
         GlobalTablist tab = new GlobalTablist();
-        tab.add(GlobalTablist.TabPosition.HEADER, "&bYou are playing on &e&lMC.HYLIAMC.NET");
-        tab.add(GlobalTablist.TabPosition.FOOTER, "&aRanks, Boosters and MORE! &c&lSTORE.HYLIAMC.NET");
+        tab.add(GlobalTablist.TabPosition.HEADER, "&bEstas jugando en &e&lMC.HYLIAMC.NET");
+        tab.add(GlobalTablist.TabPosition.FOOTER, "&aRangos, Boosters y MAS! &c&lSTORE.HYLIAMC.NET");
         tab.sendTablist(true);
 
         // new PlayerScoreboard("&e&lHYLIA", player, DisplaySlot.SIDEBAR, "&b ", "Rank: " + new PlayerManager(player).getRankPrefix(), "Mystery Dust: &a" + Data.getData(player, "mystery-dust"), "Achievements: &a" + Data.getData(player, "achievements"), "Level: &a" + Data.getData(player, "level"), "&a ", "Lobby: &a1", "Players: &a" + Bukkit.getOnlinePlayers().size(), "%%space%%", "&ewww.hyliamc.net").sendScoreboard(true);
 
 
-        EntityArmorStand h1 = new Hologram("§e§lFIRST LOOK TRAILER", player, new Location(Bukkit.getWorld("world"), 37.5, 87, 26.5), false).send();
-        EntityArmorStand h2 = new Hologram("§b§lHYTALE", player, new Location(Bukkit.getWorld("world"), 37.5, 87.4, 26.5), false).send();
+        EntityArmorStand h1 = new Hologram("§e§lQUIENES SOMOS?", player, new Location(Bukkit.getWorld("world"), 18.5, 73, 9.5), false).send();
+        EntityArmorStand h2 = new Hologram("§b§lHYLIA STUDIOS", player, new Location(Bukkit.getWorld("world"), 18.5, 73.4, 9.5), false).send();
         EntityArmorStand h3 = new Hologram("§bSkyblock", player, new Location(Bukkit.getWorld("world"), 7.5, 82.2, 22.5), false).send();
         EntityArmorStand h4 = new Hologram("§e&lParkour Challenge", player, new Location(Bukkit.getWorld("world"), 41.5, 79.5, 55.5), false).send();
         EntityArmorStand h5 = new Hologram("§a&lStart", player, new Location(Bukkit.getWorld("world"), 41.5, 79.15, 55.5), false).send();
-        EntityArmorStand h6 = new Hologram("§e&lRIGHT CLICK", player, new Location(Bukkit.getWorld("world"), 24.5, 82, 34.5), false).send();
-        EntityArmorStand h7 = new Hologram("§bThe Delivery Man", player, new Location(Bukkit.getWorld("world"), 24.5, 82.4, 34.5), false).send();
-        EntityArmorStand h8 = new Hologram("§e&lRIGHT CLICK", player, new Location(Bukkit.getWorld("world"), 24.5, 82, 10.5), false).send();
-        EntityArmorStand h9 = new Hologram("§bTutorial", player, new Location(Bukkit.getWorld("world"), 24.5, 82.4, 10.5), false).send();
-        EntityArmorStand h10 = new Hologram("§e§lCLICK", player, new Location(Bukkit.getWorld("world"), 20.5, 81, 44.5), false).send();
-        EntityArmorStand h11 = new Hologram("§bMystery Vault", player, new Location(Bukkit.getWorld("world"), 20.5, 81.3, 44.5), false).send();
-        EntityArmorStand h12 = new Hologram("§e§lCLICK", player, new Location(Bukkit.getWorld("world"), 20.5, 81, 0.5), false).send();
-        EntityArmorStand h13 = new Hologram("§bMystery Vault", player, new Location(Bukkit.getWorld("world"), 20.5, 81.3, 0.5), false).send();
+        EntityArmorStand h6 = new Hologram("§e&lCLICK DERECHO", player, new Location(Bukkit.getWorld("world"), 18.5, 73, 13.5), false).send();
+        EntityArmorStand h7 = new Hologram("§bRecompensas", player, new Location(Bukkit.getWorld("world"), 18.5, 73.5, 13.5), false).send();
+        EntityArmorStand h8 = new Hologram("§e&lCLICK DERECHO", player, new Location(Bukkit.getWorld("world"), 13.5, 73.5, 17.5), false).send();
+        EntityArmorStand h9 = new Hologram("§bTutorial", player, new Location(Bukkit.getWorld("world"), 13.5, 74, 17.5), false).send();
 
 
         player.setPlayerListName(new PlayerManager(player).getRankPrefix() + player.getName());

@@ -22,12 +22,12 @@ import java.util.ArrayList;
         idname = "[NPC] Tutorial",
         name = "§7",
         id = 5,
-        signature = "ll34a/xBZd5jX9qxHns+A00RwUAbyrapBd4JcfSqfHfeWWp1Ko1FzYi42I6iLihJDn5v3pCoV0/pDG++ih4rmhBrT47H7LmrN7ZHCUfrU2kMTqMNJo9NJAWtm90lrGfi8D5uMBDO83wxXi/BJBgIAj8uNFSmNis03TBxz6ORmkkNj8P7sec56AzW+4Cir86VyHyn5w7ZN/hbBAYvZBwYzoUS2b+8FraRfrDz5D1znl5Cosy78q8q/wPVWJh2ZbW4fgFalqxdx6yiSUfmV+BoN2/0z5WJM2F5QDe1zzB8JgaBHq74CqQvcacmQxJpl/hqet9ShDJdGVhj1u4T4LOMxfV7PykDoF/5/utgeyNhzIYnJQUn/FwKgbSLszfqBkMqsxrqsXQeofqRfelx/CFFtsuG9U7g9Gn+uUgCSJI53jP9qbosZKevEvSzVd7Ons59rvwoQQAeVR0hxal87ABTlmU17z98hJ8zB08gIw/jzMxERT32x7L6cM21+DKBINA/ELmdkxAymHyW8rFtvHt71PuyQykzEbE/OUKWpjMg85EbuT67QP9PSAPUMPvf+H49KJh6zVFEbWDfHFGqavNOdqPJEqZIM4xzRWYSYxjvWKoWpmaDWxQmJC+2iEzlmwaMf6eiIxviU2RviIbe2703iXVivQOd0jVPFnt/92kTIUU=",
+        signature = "M1A0td65NW1G9HY+jDjqezxqSEbA6Gou7nJ/u9mA4m1lhdPSJgFRJ2w9xpZDw9A1r2y0jojqCAIjCz4RzCsLpfdvQZJfIKhjNC27G6HFCJ8zTFsEuLTD+wlnYu29wEm8f7FSFftEgLlDfw8ICzGzNsSAYSQH8IbqTzfKgSodnqOMTJkvxtosZvie87ZmZLCt4podKMAqGJLByzB02EKm9u1XoljlIfScJGvgGzGizeTq3MIpByE3+Qrw3M9vk0vnwrY2ctT1Hn3t0RfxKVzSL3NWvcgiC6XHEFejiuIPvwcAb21Z8CL5pPpXigL8na66hoy8+v5Iwqd22gP4D5BDnYGa6vLQNrzaMqC6SzN/ZpMWor2V/RlYZrtz36fKe0lFfFYKa4m2b+cyjRyii+AbcIynDS0oy54FBaFB4qMn6K9wX4XLR+Zhloqz+cRdhHlosEQk1GkAA+v9bsZbHOuGbuS+vko2/teG5COwZcPzp/+dUTFzKTjnGg58dvjm2cNilicXVHUtGXZA66X9vagrMSi21p21XANLFOeI0aH/A/AObcUMJdbAFnr9sSzw6gCBnripSkXZOzyrHh7bYyKzoepQ5/MZRMRmSH2x9KS8d78VAAkqR/dajNMTwG66mePwpVjnsTlzLEpH7OELo7pJ+cq1EedYMgyLGZ8NT5AnQ9Y=",
         texture = "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZlNDQzOGJkMjM3ZGIzMjU5YmUxZTdkM2YxZTVkMjg0YTVjYmNmZjgzNDJjOTkzMDk1YTJmZTVhODc5OGQxZCJ9fX0=",
 
         world = "world",
         x = 13.5,
-        y = 72,5
+        y = 72.5,
         z = 17.5,
 
         looking = true

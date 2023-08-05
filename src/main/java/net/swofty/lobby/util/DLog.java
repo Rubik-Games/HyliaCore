@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class DLog {
     private static final Logger LOGGER = Logger.getLogger("Minecraft");
-    private static final String PREFIX = "[HypixelLobby]";
+    private static final String PREFIX = "[HyCore]";
 
     private static void log(Object o, Level l) {
         LOGGER.log(l, PREFIX + " " + o);
