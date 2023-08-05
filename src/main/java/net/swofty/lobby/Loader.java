@@ -106,6 +106,7 @@ public final class Loader extends JavaPlugin {
         cl.register(new Command_heal());
         cl.register(new Command_wipestats());
         cl.register(new Command_spawn());
+        cl.register(new Command_fly());
     }
     private void loadListeners() {
         PluginManager m = this.getServer().getPluginManager();
