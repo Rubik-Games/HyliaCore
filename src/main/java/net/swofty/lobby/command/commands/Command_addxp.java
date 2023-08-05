@@ -12,7 +12,7 @@ public class Command_addxp extends AbstractCommand {
     @Override
     public void run(CommandSource sender, String[] args) {
         if (args.length == 0) {
-            send("&cUsage: /addxp (XP) [player]");
+            send("&cUsaa: /addxp (XP) [jugador]");
             return;
         }
 
@@ -20,16 +20,16 @@ public class Command_addxp extends AbstractCommand {
 
             try {
                 new PlayerManager(sender.getPlayer()).addXP(Integer.parseInt(args[0]));
-                send("&aAdded " + args[0] + "xp to your total xp");
+                send("&aAgregado " + args[0] + "xp a tu total de xp");
             } catch (Exception e) {
-                send("&cThere was an error adding " + args[0] + " to your total xp");
+                send("&cHa habido un error agregando " + args[0] + " a tu total de xp");
             }
         } else {
             try {
                 new PlayerManager(Bukkit.getPlayer(args[1])).addXP(Integer.parseInt(args[0]));
-                send("&aAdded " + args[0] + "xp to your total xp");
+                send("&aAgregado " + args[0] + "xp a su total de xp");
             } catch (Exception e) {
-                send("&cThere was an error adding " + args[0] + " to " + args[1] + "'s total xp");
+                send("&cHa habido un error agregando " + args[0] + " a " + args[1] + " total xp");
             }
         }
     }

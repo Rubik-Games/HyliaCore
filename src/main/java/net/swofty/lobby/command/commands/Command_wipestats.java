@@ -22,7 +22,7 @@ public class Command_wipestats extends AbstractCommand {
 
         if (isSure.contains(sender.getPlayer())) {
 
-            sender.getPlayer().kickPlayer("§cRejoin for your stat-wipe to finish processing");
+            sender.getPlayer().kickPlayer("§cVuelve a unirte para finalizar el proceso de reinicio de estadisticas.");
             File userdata = new File(Bukkit.getServer().getPluginManager().getPlugin("HypixelLobby").getDataFolder(), File.separator + "PlayerDatabase");
             File f = new File(userdata, File.separator + sender.getPlayer().getUniqueId() + ".yml");
             f.delete();
@@ -31,8 +31,8 @@ public class Command_wipestats extends AbstractCommand {
         } else {
 
             isSure.add(sender.getPlayer());
-            send("&c&lTHIS IS PERMANENT, TYPE THE COMMAND AGAIN TO EXECUTE WIPE");
-            send("&7(Except for your rank, it'll re-sync)");
+            send("&c&lESTO ES PERMANENTE, VUELVE A PONER EL COMANDO PARA CONFIRMAR");
+            send("&7(Excepto tu rango, volvera a re-sincronizarse)");
 
         }
     }

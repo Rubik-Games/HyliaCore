@@ -12,12 +12,12 @@ public class Command_rank extends AbstractCommand {
     @Override
     public void run(CommandSource sender, String[] args) {
         if (args.length == 0 || args.length == 1) {
-            send("&cUsage: /rank <player> <rank>");
+            send("&cUsa: /rank <jugador> <rango>");
             return;
         }
 
         if (Bukkit.getPlayer(args[0]) == null) {
-            send("&cCould not find player '" + args[0] + "'");
+            send("&cNo se ha encontrado a '" + args[0] + "'");
             return;
         }
 
@@ -26,70 +26,80 @@ public class Command_rank extends AbstractCommand {
         switch (args[1]) {
             case "default":
                 new PlayerManager(target).setRank("default");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "vip":
                 new PlayerManager(target).setRank("vip");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "vip+":
                 new PlayerManager(target).setRank("vip+");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "mvp":
                 new PlayerManager(target).setRank("mvp");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "mvp+":
                 new PlayerManager(target).setRank("mvp+");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "mvp++":
                 new PlayerManager(target).setRank("mvp++");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "events":
                 new PlayerManager(target).setRank("events");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "mojang":
                 new PlayerManager(target).setRank("mojang");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
+                return;
+
+            case "yt":
+                new PlayerManager(target).setRank("yt");
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "youtube":
                 new PlayerManager(target).setRank("youtube");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
+                return;
+
+            case "builder":
+                new PlayerManager(target).setRank("builder");
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "helper":
                 new PlayerManager(target).setRank("helper");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "mod":
                 new PlayerManager(target).setRank("mod");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "gamemaster":
                 new PlayerManager(target).setRank("gamemaster");
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 return;
 
             case "admin":
-                send("&aSuccessfully set " + target.getName() + "'s rank to " + args[1].toUpperCase());
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 new PlayerManager(target).setRank("admin");
                 return;
         }
 
-        send("&c'" + args[1] + "' is not a valid rank");
+        send("&c'" + args[1] + "' no es un rango valido");
     }
 }

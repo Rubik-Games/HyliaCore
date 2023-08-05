@@ -58,7 +58,7 @@ public abstract class AbstractCommand implements CommandExecutor, TabCompleter {
             public DECommand(AbstractCommand cmd) {
                 super(cmd.name, cmd.description, cmd.usage, cmd.aliases);
                 this.setPermission(cmd.permission);
-                this.setPermissionMessage("§cYou must be admin or higher to use this command!");
+                this.setPermissionMessage("§cDebes de ser admin o superior para hacer eso!");
                 this.cmd = cmd;
             }
 
@@ -67,7 +67,7 @@ public abstract class AbstractCommand implements CommandExecutor, TabCompleter {
                 cmd.sender = new CommandSource(commandSender);
 
                 if(cmd.params.inGameOnly() && commandSender instanceof ConsoleCommandSender) {
-                    commandSender.sendMessage("§cPlayers only!");
+                    commandSender.sendMessage("§cSolo jugadores!");
                     return true;
                 }
 
@@ -78,15 +78,15 @@ public abstract class AbstractCommand implements CommandExecutor, TabCompleter {
                         commandSender.sendMessage(cmd.usage);
                         return true;
                     }catch (PlayerNotFoundException ex) {
-                        commandSender.sendMessage("§cPlayer not found.");
+                        commandSender.sendMessage("§cJugador no encontrado.");
                         return true;
                     }catch (Exception ex) {
-                        commandSender.sendMessage("§cAn error occurred: " + ex.getMessage());
+                        commandSender.sendMessage("§cHa ocurrido un error: " + ex.getMessage());
                         ex.printStackTrace();
                         return true;
                     }
                 } else {
-                    commandSender.sendMessage("§cYou must be ADMIN or higher to use this command!");
+                    commandSender.sendMessage("§cDebes de ser ADMIN o superior para hacer eso!");
                 }
                 return false;
             }

@@ -13,7 +13,7 @@ public class Command_gm extends AbstractCommand {
     @Override
     public void run(CommandSource sender, String[] args) {
         if (args.length == 0) {
-            send("&cUsage: /gm (creative / survival / adventure / spectator)");
+            send("&cUsa: /gm (creative / survival / adventure / spectator)");
             return;
         }
 
@@ -22,31 +22,31 @@ public class Command_gm extends AbstractCommand {
             case "survival":
             case "s":
                 sender.getPlayer().setGameMode(GameMode.SURVIVAL);
-                send("&aYou're now in SURVIVAL");
+                send("&aAhora estas en SURVIVAL");
                 return;
 
             case "1":
             case "creative":
             case "c":
                 sender.getPlayer().setGameMode(GameMode.CREATIVE);
-                send("&aYou're now in CREATIVE");
+                send("&aAhora estas en CREATIVO");
                 return;
 
             case "2":
             case "adventure":
             case "a":
                 sender.getPlayer().setGameMode(GameMode.ADVENTURE);
-                send("&aYou're now in ADVENTURE");
+                send("&aAhora estas en AVENTURA");
                 return;
 
             case "3":
             case "spectator":
             case "sp":
                 sender.getPlayer().setGameMode(GameMode.SPECTATOR);
-                send("&aYou're now in SPECTATOR");
+                send("&aAhora estas en ESPECTADOR");
                 return;
         }
 
-        send("&cUsage: /gm (creative / survival / adventure / spectator)");
+        send("&cUsa: /gm (creative / survival / adventure / spectator)");
     }
 }

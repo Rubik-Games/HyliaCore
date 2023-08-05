@@ -51,8 +51,14 @@ public class PlayerManager implements HypixelPlayer {
             case "mojang":
                 return "§6[MOJANG] ";
 
+            case "yt":
+                return "§6[YT] ";
+
             case "youtube":
                 return "§c[§fYOUTUBE§c] ";
+
+            case "builder":
+                return "§3[BUILD TEAM] ";
 
             case "helper":
                 return "§9[HELPER] ";
@@ -85,6 +91,7 @@ public class PlayerManager implements HypixelPlayer {
             case "mvp+":
                 return "§b";
 
+            case "yt":
             case "mojang":
             case "events":
             case "mvp++":
@@ -92,6 +99,9 @@ public class PlayerManager implements HypixelPlayer {
 
             case "youtube":
                 return "§f";
+
+            case "builder":
+                return "§3";
 
             case "helper":
                 return "§9";
@@ -127,13 +137,13 @@ public class PlayerManager implements HypixelPlayer {
             Data.editData(player, "level", String.valueOf(Integer.parseInt(Data.getData(player, "level")) + 1));
             Data.editData(player, "xp", "0");
             sendMessage("§a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃");
-            sendMessage("                              §a§ka§r §6LEVEL UP! §a§k9");
+            sendMessage("                              §a§ka§r §6SUBIDA DE NIVEL! §a§k9");
             sendMessage(" ");
-            sendMessage("                   §7You are now §3Hypixel Level §a" + Data.getData(player, "level"));
+            sendMessage("                   §7Ahora eres §3Nivel de Hylia §a" + Data.getData(player, "level"));
             sendMessage(" ");
-            sendMessage("                   §66.0x §7Coin Multiplier §aUnlocked§7!");
+            sendMessage("                   §66.0x §7Multiplicador de Monedas §aDesbloqueado§7!");
             sendMessage(" ");
-            sendMessage("                  §eClaim your reward in the lobby!");
+            sendMessage("                  §eRecoge tu recompensa en el lobby!");
             sendMessage("§a▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃▃");
             player.playSound(player.getLocation(), Sound.LEVEL_UP, 100, 100);
             player.setLevel(Integer.parseInt(Data.getData(player, "level")));

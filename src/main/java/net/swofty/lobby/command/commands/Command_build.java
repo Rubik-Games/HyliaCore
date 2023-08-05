@@ -11,10 +11,10 @@ public class Command_build extends AbstractCommand {
     public void run(CommandSource sender, String[] args) {
         if (Data.getData(sender.getPlayer(), "build").equals("true")) {
             Data.editData(sender.getPlayer(), "build", "false");
-            send("&aBuild mode is now DISABLED");
+            send("&aModo construccion DESHABILITADO");
         } else {
             Data.editData(sender.getPlayer(), "build", "true");
-            send("&aBuild mode is now ENABLED");
+            send("&aModo construccion HABILITADO");
         }
     }
 }

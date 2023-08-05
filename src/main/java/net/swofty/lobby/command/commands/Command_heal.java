@@ -10,6 +10,6 @@ public class Command_heal extends AbstractCommand {
     public void run(CommandSource sender, String[] args) {
         sender.getPlayer().setFoodLevel(20);
         sender.getPlayer().setHealth(20);
-        send("&aYou have been HEALED");
+        send("&aHas sido CURADO");
     }
 }

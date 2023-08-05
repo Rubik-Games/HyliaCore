@@ -25,7 +25,7 @@ public class Command_parkour extends AbstractCommand {
 
         switch (args[0]) {
             case "cancel":
-                send("&cParkour challenge cancelled!");
+                send("&cDesafio de parkour cancelado!");
                 Data.editData(sender.getPlayer(), "parkour", "none");
                 Items.giveSpawnItems(sender.getPlayer(), Boolean.valueOf(Data.getData(sender.getPlayer(), "hidden-players")));
                 Data.editData(sender.getPlayer(),"checkpoint", "1");
@@ -35,13 +35,13 @@ public class Command_parkour extends AbstractCommand {
                 if (!Data.getData(sender.getPlayer(), "parkour").equals("null")) {
                     sender.getPlayer().teleport(new Location(Bukkit.getWorld("world"), 39, 79, 52));
                 } else {
-                    send("&cYou are currently in a parkour race. Use /parkour reset");
+                    send("&cTe encuentras en una carrera de parkour. Usa /parkour reset");
                 }
                 return;
 
             case "reset":
                 if (!Data.getData(sender.getPlayer(), "parkour").equals("null")) {
-                    send("&a&lTeleported you to the start of the parkour!");
+                    send("&a&lTeletransportado al inicio del parkour!");
                     sender.getPlayer().teleport(new Location(Bukkit.getWorld("world"), 41, 79, 55));
                 } else {
                     sender.getPlayer().teleport(new Location(Bukkit.getWorld("world"), 41, 79, 55));

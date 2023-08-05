@@ -1,4 +1,4 @@
-name: HyliaSpigotCore
+name: HypixelLobby
 version: '${project.version}'
 main: net.swofty.lobby.Loader
 authors: [ HyliaMC ]

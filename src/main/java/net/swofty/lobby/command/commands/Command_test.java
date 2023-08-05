@@ -11,6 +11,6 @@ import net.swofty.lobby.util.signgui.SignGUI;
 public class Command_test extends AbstractCommand {
     @Override
     public void run(CommandSource sender, String[] args) {
-        send("&aTest Successful");
+        send("&aTest satisfactorio");
     }
 }
