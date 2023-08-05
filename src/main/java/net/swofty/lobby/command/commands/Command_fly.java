@@ -12,12 +12,10 @@ public class Command_fly extends AbstractCommand {
 
     @Override
     public void run(CommandSource sender, String[] args) {
-        Player player = (Player) sender;
+        boolean isFlying = sender.getPlayer().isFlying();
 
-        boolean isFlying = player.isFlying();
-
-        player.setAllowFlight(!isFlying);
-        player.setFlying(!isFlying);
+        sender.getPlayer().setAllowFlight(!isFlying);
+        sender.getPlayer().setFlying(!isFlying);
 
         if(isFlying)
             send("Flying disabled.");
