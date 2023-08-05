@@ -73,7 +73,7 @@ public class PlayerJoin implements Listener {
         Items.giveSpawnItems(player, hidden);
 
         player.setLevel(1);
-        player.teleport(new Location(Bukkit.getWorld("Lobby"), 45.5, 86, 22.5));
+        player.teleport(new Location(Bukkit.getWorld("world"), 45.5, 86, 22.5));
 
         GlobalTablist tab = new GlobalTablist();
         tab.add(GlobalTablist.TabPosition.HEADER, "&bYou are playing on &e&lMC.HYLIAMC.NET");
@@ -124,15 +124,17 @@ public class PlayerJoin implements Listener {
             case "vip":
             case "vip+":
             case "mvp+":
-                event.setJoinMessage(new PlayerManager(player).getRankPrefix() + event.getPlayer().getName() + " §6joined the lobby!");
+                event.setJoinMessage(new PlayerManager(player).getRankPrefix() + event.getPlayer().getName() + " §6se ha unido al lobby!");
                 return;
             case "mvp++":
+            case "yt":
             case "youtube":
             case "helper":
             case "mod":
             case "gamemaster":
             case "admin":
-                event.setJoinMessage(Util.colorize(" &b>&c>&a> " + new PlayerManager(player).getRankPrefix() + event.getPlayer().getName() + " §6joined the lobby! &a<&c<&b<"));
+            case "owner":
+                event.setJoinMessage(Util.colorize(" &b>&c>&a> " + new PlayerManager(player).getRankPrefix() + event.getPlayer().getName() + " §6se ha unido al lobby! &a<&c<&b<"));
                 return;
         }
 

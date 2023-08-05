@@ -10,6 +10,6 @@ import org.bukkit.Location;
 public class Command_spawn extends AbstractCommand {
     @Override
     public void run(CommandSource sender, String[] args) {
-        sender.getPlayer().teleport(new Location(Bukkit.getWorld("world"), 45.5, 86, 22.5));
+        sender.getPlayer().teleport(new Location(Bukkit.getWorld("world"), 21.475, 72, 11.508));
     }
 }

@@ -14,9 +14,9 @@ import net.swofty.lobby.util.BookGUI;
         texture = "ewogICJ0aW1lc3RhbXAiIDogMTYyMzE1OTU4MzU4MiwKICAicHJvZmlsZUlkIiA6ICIxYTc1ZTNiYmI1NTk0MTc2OTVjMmY4NTY1YzNlMDAzZCIsCiAgInByb2ZpbGVOYW1lIiA6ICJUZXJvZmFyIiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2M3NjcwNjg4MWIxZDNmNTc1YjU1ZTE0YTcxODViYjk0NDcwNTc1Zjk1ODllZTU4YzVlYTQ4YjBjYjlhYmNkMmUiCiAgICB9CiAgfQp9",
 
         world = "world",
-        x = 24.5,
-        y = 81,
-        z = 34.5,
+        x = 18.5,
+        y = 72,
+        z = 13.5,
 
         looking = true
 )

@@ -98,6 +98,11 @@ public class Command_rank extends AbstractCommand {
                 send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
                 new PlayerManager(target).setRank("admin");
                 return;
+
+            case "owner":
+                send("&aSe ha colocado a " + target.getName() + " el rango " + args[1].toUpperCase());
+                new PlayerManager(target).setRank("owner");
+                return;
         }
 
         send("&c'" + args[1] + "' no es un rango valido");

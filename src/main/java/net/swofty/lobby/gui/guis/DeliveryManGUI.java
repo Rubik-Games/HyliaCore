@@ -95,7 +95,7 @@ public class DeliveryManGUI extends GUI {
 
         inventory.setItem(29, makeItemOther(Material.MINECART, "§cSurvey", 1, 0, "§7There isn't a survey available\n§7right now!"));
         inventory.setItem(30, makeItemOther(Material.MINECART, "§6Social Media Awards", 1, 0, "§7Click to view all available\n§7Social Media Awards!"));
-        inventory.setItem(31, makeItemOther(Material.DIAMOND_BLOCK, "§aDaily Reward", 1, 0, "§7Daily rewards for visiting our\n§7website including: §6Coins§7,\n§3Hypixel Experience§7,\n§bSkyWars Souls§7, §cUnique\n§cCosmetics §7and more!\n\n§7Current Streak: §b0\n\n§eClick here to get the link in chat!"));
+        inventory.setItem(31, makeItemOther(Material.DIAMOND_BLOCK, "§aDaily Reward", 1, 0, "§7Daily rewards for visiting our\n§7website including: §6Coins§7,\n§3Hylia Experience§7,\n§bSkyWars Souls§7, §cUnique\n§cCosmetics §7and more!\n\n§7Current Streak: §b0\n\n§eClick here to get the link in chat!"));
         inventory.setItem(32, makeItemOther(Material.MINECART, "§6Website Link", 1, 0, "§7You have linked your account to\n§7the forums."));
 
         inventory.setItem(20, makeItemOther(Material.ENDER_CHEST, "§aMystery Box Delivery", 1, 0, "§7Your free monthly 1-Star\n§7Mystery Box for July have arrived!\n\n§cNot Available!"));

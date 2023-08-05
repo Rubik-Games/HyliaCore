@@ -72,6 +72,8 @@ public class PlayerManager implements HypixelPlayer {
             case "admin":
                 return "§c[ADMIN] ";
 
+            case "owner":
+                return "§c[OWNER] ";
         }
         return null;
     }
@@ -110,6 +112,7 @@ public class PlayerManager implements HypixelPlayer {
             case "mod":
                 return "§2";
 
+            case "owner":
             case "admin":
                 return "§c";
 

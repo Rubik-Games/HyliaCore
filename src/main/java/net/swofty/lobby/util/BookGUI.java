@@ -40,11 +40,11 @@ public class BookGUI {
         BookMeta meta = (BookMeta) book.getItemMeta();
 
         List<IChatBaseComponent> pages = (List<IChatBaseComponent>) CraftMetaBook.class.getDeclaredField("pages").get(meta);
-        TextComponent text = new TextComponent("You rank has been changed, please re-log for the rank changes to affect.\n\n");
-        TextComponent log_out = new TextComponent(new ComponentBuilder("§a§lLOG OUT").event(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/simulateevent rank::book_confirm")).create());
+        TextComponent text = new TextComponent("Tu rango ha cambiado, porfavor, vuelve a unirte para los cambios.\n\n");
+        TextComponent log_out = new TextComponent(new ComponentBuilder("§a§lSALIR").event(new ClickEvent(ClickEvent.Action.RUN_COMMAND, "/simulateevent rank::book_confirm")).create());
         IChatBaseComponent page = IChatBaseComponent.ChatSerializer.a(ComponentSerializer.toString(text, log_out));
         pages.add(page);
-        meta.setTitle("Rank Changes");
+        meta.setTitle("Cambio de Rango");
         meta.setAuthor("Server");
         book.setItemMeta(meta);
 
@@ -61,7 +61,7 @@ public class BookGUI {
         TextComponent text = new TextComponent(Util.colorize("&6&lHYLIA NETWORK RULES\n\n1. Bad/inappropriate skins are bannable."));
         IChatBaseComponent page = IChatBaseComponent.ChatSerializer.a(ComponentSerializer.toString(new BaseComponent[] {text}));
         pages.add(page);
-        meta.setTitle("Rules");
+        meta.setTitle("Reglas");
         meta.setAuthor("Server");
         book.setItemMeta(meta);
 

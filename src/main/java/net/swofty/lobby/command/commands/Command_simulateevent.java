@@ -16,7 +16,7 @@ public class Command_simulateevent extends AbstractCommand {
 
         switch (args[0]) {
             case "rank::book_confirm":
-                sender.getPlayer().kickPlayer("§cRejoin for your rank to finish processing");
+                sender.getPlayer().kickPlayer("§cVuelve a unirte para completar el proceso!");
                 break;
         }
     }

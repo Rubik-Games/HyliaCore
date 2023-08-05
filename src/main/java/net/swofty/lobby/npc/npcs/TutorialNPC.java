@@ -23,12 +23,12 @@ import java.util.ArrayList;
         name = "§7",
         id = 5,
         signature = "ll34a/xBZd5jX9qxHns+A00RwUAbyrapBd4JcfSqfHfeWWp1Ko1FzYi42I6iLihJDn5v3pCoV0/pDG++ih4rmhBrT47H7LmrN7ZHCUfrU2kMTqMNJo9NJAWtm90lrGfi8D5uMBDO83wxXi/BJBgIAj8uNFSmNis03TBxz6ORmkkNj8P7sec56AzW+4Cir86VyHyn5w7ZN/hbBAYvZBwYzoUS2b+8FraRfrDz5D1znl5Cosy78q8q/wPVWJh2ZbW4fgFalqxdx6yiSUfmV+BoN2/0z5WJM2F5QDe1zzB8JgaBHq74CqQvcacmQxJpl/hqet9ShDJdGVhj1u4T4LOMxfV7PykDoF/5/utgeyNhzIYnJQUn/FwKgbSLszfqBkMqsxrqsXQeofqRfelx/CFFtsuG9U7g9Gn+uUgCSJI53jP9qbosZKevEvSzVd7Ons59rvwoQQAeVR0hxal87ABTlmU17z98hJ8zB08gIw/jzMxERT32x7L6cM21+DKBINA/ELmdkxAymHyW8rFtvHt71PuyQykzEbE/OUKWpjMg85EbuT67QP9PSAPUMPvf+H49KJh6zVFEbWDfHFGqavNOdqPJEqZIM4xzRWYSYxjvWKoWpmaDWxQmJC+2iEzlmwaMf6eiIxviU2RviIbe2703iXVivQOd0jVPFnt/92kTIUU=",
-        texture = "eyJ0aW1lc3RhbXAiOjE1ODcyMjU2MTc5NTcsInByb2ZpbGVJZCI6ImY3Yzc3ZDk5OWYxNTRhNjZhODdkYzRhNTFlZjMwZDE5IiwicHJvZmlsZU5hbWUiOiJoeXBpeGVsIiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS8yNDdjMDU4ODQ1ZjNiNmQwMzQ4YWFlNTZiNmFhMWE2MWM0NjlkODRjYmFiYTA0ODE2NDA1MGExZDMzNWQ2ZWEwIn19fQ==",
+        texture = "e3RleHR1cmVzOntTS0lOOnt1cmw6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDZlNDQzOGJkMjM3ZGIzMjU5YmUxZTdkM2YxZTVkMjg0YTVjYmNmZjgzNDJjOTkzMDk1YTJmZTVhODc5OGQxZCJ9fX0=",
 
         world = "world",
-        x = 24.5,
-        y = 81,
-        z = 10.5,
+        x = 13.5,
+        y = 72,5
+        z = 17.5,
 
         looking = true
 )
@@ -47,11 +47,11 @@ public class TutorialNPC extends NPC {
         event.getPlayer().setGameMode(GameMode.SPECTATOR);
         tutorial1.add(event.getPlayer());
         event.getPlayer().sendMessage(" ");
-        event.getPlayer().sendMessage("§e§lJump into the portal,");
-        event.getPlayer().sendMessage("§bor right-click your compass to start playing.");
+        event.getPlayer().sendMessage("§e§lBienvenido a Hylia,");
+        event.getPlayer().sendMessage("§bdale a la brujula para jugar.");
         event.getPlayer().sendMessage(" ");
 
-        event.getPlayer().sendTitle("§e§lJump into the portal,", "§bor right-click your compass to start playing.");
+        event.getPlayer().sendTitle("§e§lBienvenido a Hylia,", "§bdale a la brujula para jugar.");
 
         new BukkitRunnable() {
             @Override
@@ -59,12 +59,12 @@ public class TutorialNPC extends NPC {
 
                 tutorial1.remove(event.getPlayer());
                 tutorial2.add(event.getPlayer());
-                event.getPlayer().sendMessage("§e§lYou can also");
-                event.getPlayer().sendMessage("§bright-click one of the NPCs near the portal.");
+                event.getPlayer().sendMessage("§e§lTambien puedes");
+                event.getPlayer().sendMessage("§bdarle click-derecho a los npcs.");
                 event.getPlayer().sendMessage(" ");
 
 
-                event.getPlayer().sendTitle("§e§lYou can also", "§bright-click one of the NPCs near the portal.");
+                event.getPlayer().sendTitle("§e§lTambien puedes", "§bdarle click-derecho a los npcs.");
 
                 new BukkitRunnable() {
                     @Override
@@ -72,11 +72,11 @@ public class TutorialNPC extends NPC {
 
                         tutorial2.remove(event.getPlayer());
                         tutorial3.add(event.getPlayer());
-                        event.getPlayer().sendMessage("§e§lCheck out your inventory.");
-                        event.getPlayer().sendMessage("§bThere's achievements, gadgets and more!");
+                        event.getPlayer().sendMessage("§e§lMira tu inventario.");
+                        event.getPlayer().sendMessage("§bTienes logros, cosmeticos y mas!");
                         event.getPlayer().sendMessage(" ");
 
-                        event.getPlayer().sendTitle("§e§lCheck out your inventory.", "§bThere's achievements, gadgets and more!");
+                        event.getPlayer().sendTitle("§e§lMira tu inventario.", "§bTienes logros, cosmeticos y mas!");
 
                         new BukkitRunnable() {
                             @Override
@@ -84,11 +84,11 @@ public class TutorialNPC extends NPC {
 
                                 tutorial3.remove(event.getPlayer());
                                 tutorial4.add(event.getPlayer());
-                                event.getPlayer().sendMessage("§e§lVisit our website!");
-                                event.getPlayer().sendMessage("§bwww.hypixel.net - News, discussion and more!");
+                                event.getPlayer().sendMessage("§e§lVisita nuestra web!");
+                                event.getPlayer().sendMessage("§bwww.hyliamc.net - Noticias, discusiones y mas!");
                                 event.getPlayer().sendMessage(" ");
 
-                                event.getPlayer().sendTitle("§e§lVisit our website!", "§bwww.hypixel.net - News, discussion and more!");
+                                event.getPlayer().sendTitle("§e§lVisita nuestra web!", "§bwww.hyliamc.net - Noticias, discusiones y mas!");
 
                                 new BukkitRunnable() {
                                     @Override
@@ -96,11 +96,11 @@ public class TutorialNPC extends NPC {
 
                                         tutorial4.remove(event.getPlayer());
                                         tutorial5.add(event.getPlayer());
-                                        event.getPlayer().sendMessage("§e§lThat's it!");
-                                        event.getPlayer().sendMessage("§bHave fun on the server!");
+                                        event.getPlayer().sendMessage("§e§lEso es todo!");
+                                        event.getPlayer().sendMessage("§bPasalo bien en el servidor!");
                                         event.getPlayer().sendMessage(" ");
 
-                                        event.getPlayer().sendTitle("§e§lThat's it!", "§bHave fun on the server!");
+                                        event.getPlayer().sendTitle("§e§lEso es todo!", "§bPasalo bien en el servidor!");
 
                                         new BukkitRunnable() {
                                             @Override
